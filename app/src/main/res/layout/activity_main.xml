@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/hoursInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hours Worked"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/rateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hourly Rate"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/taxInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tax Rate (e.g. 0.15)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/payResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay: $0.00"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/overtimeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overtime Pay: $0.00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/totalResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Pay: $0.00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/taxResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax: $0.00"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About" />
+
+</LinearLayout>
